@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+  个人名片 —— 简约风格名片网页
+  本项目采用 HTML5 + CSS3 实现，HTML 结构与 CSS 样式分离书写。
+  页面结构见本文件，所有样式集中写在同目录下的 style.css 中。
+-->
+<html lang="zh-CN">
+<head>
+    <!-- 字符编码设为 UTF-8，避免中文乱码 -->
+    <meta charset="UTF-8">
+    <!-- 视口设置，适配移动端浏览器 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 页面标题 -->
+    <title>个人名片 - 张三</title>
+    <!-- 引入外部样式表（样式与结构分离） -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--
+      卡片容器：作为一张居中的名片卡片。
+      通过 style.css 中的 flex 布局在视口内水平、垂直居中。
+    -->
+    <main class="card">
+
+        <!-- 圆形头像：
+             默认使用纯 CSS 绘制的圆形占位（显示姓氏首字）。
+             如需替换为真实头像，请将下面这个 div 替换为：
+             <img class="avatar" src="你的图片路径.jpg" alt="头像">
+        -->
+        <div class="avatar" aria-label="头像占位">张</div>
+
+        <!-- 姓名 -->
+        <h1 class="name">张三</h1>
+
+        <!-- 职位 -->
+        <p class="job-title">前端工程师</p>
+
+        <!-- 分隔线，起装饰作用 -->
+        <hr class="divider">
+
+        <!-- 联系方式列表 -->
+        <ul class="contact">
+            <!-- 电话号码 -->
+            <li>
+                <span class="contact-icon">&#9990;</span> <!-- 电话机符号 -->
+                <span>138-0000-0000</span>
+            </li>
+            <!-- 电子邮箱 -->
+            <li>
+                <span class="contact-icon">&#9993;</span> <!-- 信封符号 -->
+                <span>zhangsan@example.com</span>
+            </li>
+        </ul>
+
+    </main>
+
+</body>
+</html>
